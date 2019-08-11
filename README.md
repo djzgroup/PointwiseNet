@@ -71,16 +71,22 @@ The retrieval results. Left column: queries. Right five columns: retrieved model
 <img src="https://github.com/djzgroup/PointwiseNet/blob/master/img/retrival.jpg" width="450">
 
 
-## Bilingual Lexicon Induction
-for the model complexity problem, in order to compare with other methods, the following table summarizes the space (number of parameters) and the time (floating point operations) complexity of PointwiseNet in 3D object classification task with 1024 points as the input. Compared with PointNet++ [40], PointwiseNet reduces the parameters by 4.7% and the FLOPs by 52.0%, which shows its great potential for real-time applications, e.g., scene parsing in autonomous driving.
+## Complexity Analysis
+The following table summarizes the space (number of parameters) and the time (floating point operations) complexity of PointwiseNet in 3D object classification task with 1024 points as the input. Compared with PointNet++ [40], PointwiseNet reduces the parameters by 4.7% and the FLOPs by 52.0%, which shows its great potential for real-time applications, e.g., scene parsing in autonomous driving.
 
 Method 	| #params | #FLOPs (Inference) 
 -|-|-
-PointNet      |3.48M	 |14.70B
-FaPointNet++ | 1.48M	 |26.94B
-3DmFVNet | 45.77M	 |16.89B
-Our | 78.00 | 1.41M	 |12.92B
+PointNet [1]      |3.48M	 |14.70B
+PointNet++ [2]  | 1.48M	 |26.94B
+3DmFVNet [3]      | 45.77M	 |16.89B
+PointwiseNet      | 78.00 | 1.41M	 |12.92B
 
+
+## References
+- [1] Qi C R, Su H, Mo K, et al. Pointnet: Deep learning on point sets for 3d classification and segmentation[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2017: 652-660.
+- [2] Qi C R, Yi L, Su H, et al. Pointnet++: Deep hierarchical feature learning on point sets in a metric space[C]//Advances in neural information processing systems. 2017: 5099-5108.
+- [3] Ben-Shabat Y, Lindenbaum M, Fischer A. 3dmfv: Three-dimensional point cloud classification in real-time using convolutional neural networks[J]. IEEE Robotics and Automation Letters, 2018, 3(4): 3145-3152.
+- [4] Li J, Chen B M, Hee Lee G. So-net: Self-organizing network for point cloud analysis[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2018: 9397-9406.
 
 ## Acknowledgment
 This work was supported in part by the National Natural Science Foundation of China under Grant 61702350 and Grant 61472289 and in part by the Open Project Program of the State Key Laboratory of Digital Manufacturing Equipment and Technology, HUST, under Grant DMETKF2017016.
