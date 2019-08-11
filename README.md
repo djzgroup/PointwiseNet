@@ -58,13 +58,13 @@ Taking the 3D object classification experiment as an example, we prove that the 
 ## Best model
 You can download the best trained model to verify our results.\
 3D object classification(modelnet10)\
-[1024,94.5]{https://git}  [2048,95.0]{https://git}  [5000,95.1]{https://git}\
+[[1024,94.5]](https://github.com/djzgroup/PointwiseNet)  [[2048,95.0]](https://github.com/djzgroup/PointwiseNet)   [[5000,95.1]](https://github.com/djzgroup/PointwiseNet) \
 3D object classification(modelnet40)\
-[1024,91.3]{https://git}  [2048,91.6]{https://git}  [5000,92.7]{https://git}\
+[[1024,91.3]](https://github.com/djzgroup/PointwiseNet)  [[2048,91.6]](https://github.com/djzgroup/PointwiseNet)   [[5000,92.7]](https://github.com/djzgroup/PointwiseNet) \
 3D object part segmentation(ShapeNet)\
-[85.1]{https://git}\
+[[85.1](https://github.com/djzgroup/PointwiseNet) \
 Semantic segmentation in scenes(S3DIS)\
-[5000,92.7]{https://git}
+[[5000,92.7](https://github.com/djzgroup/PointwiseNet) 
 
 ## Acknowledgment
 This work was supported in part by the National Natural Science Foundation of China under Grant 61702350 and Grant 61472289 and in part by the Open Project Program of the State Key Laboratory of Digital Manufacturing Equipment and Technology, HUST, under Grant DMETKF2017016.
