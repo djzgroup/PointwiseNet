@@ -37,25 +37,6 @@ ${ROOT}/\
    ├── evaluate.py\
    ├── README.md
 
-## Results
-**3D object part segmentation**
-Results of part segmentation on the validation data of the ShapeNet part dataset. Best viewed in color. Examples are plane, bag, cap, car, chair, earphone, guitar, knife, lamp, laptop, motor, mug, pistol, rocket, skate and table. Due to space limitations, it is impossible to show all the examples; thus, we randomly selected a model from each category for visual comparison. For each group of objects, the leftmost one is the ground truth, the middle one was predicted by PointNet, and the right one was predicted by PointwiseNet.
-
-<img src="https://github.com/djzgroup/PointwiseNet/blob/master/img/part_seg.jpg" width="600">
-
-**Semantic segmentation in scenes**
-Qualitative results for semantic segmentation. From left to right: original input scenes; ground truth point cloud segmentation; PointNet segmentation results and PointwiseNet segmentation results. Best viewed in color. We selected 5 room scenes (from top to bottom are conference room #1, office #1, office #3, lounge #1, and lobby #1) from the evaluation dataset for display. The first column is the input point cloud, with the walls and ceiling hidden for clarity.  The second, third, and last columns are the ground truth segmentation, the prediction from PointNet, and the prediction from PointwiseNet, respectively, where the points belonging to different semantic regions are coloured differently (chairs in red, tables in purple, bookcase in green, floors in blue, clutters in black, beam in yellow, board in grey, and doors in khaki).
-
-<img src="https://github.com/djzgroup/PointwiseNet/blob/master/img/sem_seg.jpg" width="600">
-
-**Commercial 3D CAD model retrieval**
-The retrieval results. Left column: queries. Right five columns: retrieved models from the 3D CAD model database.
-
-<img src="https://github.com/djzgroup/PointwiseNet/blob/master/img/retrival.jpg" width="450">
-
-## Hypothesis testing
-Taking the 3D object classification experiment as an example, we prove that the proposed method is significantly different from other methods through the hypothesis testing.\
-[Click on the hyperlink for details.](https://github.com/djzgroup/PointwiseNet/blob/master/HypothesisTesting.pdf)
 
 ## Best model
 **You can download the best trained model to verify our results.**
@@ -67,6 +48,28 @@ Taking the 3D object classification experiment as an example, we prove that the 
   [[85.1]](https://drive.google.com/file/d/1q_sBZtbJoygv6gFm35Bq2Kvetr1XXELp/view?usp=sharing) 
 - Semantic segmentation in scenes(S3DIS)\
   [[5000,92.7]](https://drive.google.com/file/d/1q2rsqdtLi2EXxvEQvG6Uom0wESD2KB6u/view?usp=sharing) 
+
+
+## Results
+**Hypothesis testing**\
+Taking the 3D object classification experiment as an example, we prove that the proposed method is significantly different from other methods through the hypothesis testing.\
+[Click on the hyperlink for details.](https://github.com/djzgroup/PointwiseNet/blob/master/HypothesisTesting.pdf)
+
+**3D object part segmentation**\
+Results of part segmentation on the validation data of the ShapeNet part dataset. Best viewed in color. Examples are plane, bag, cap, car, chair, earphone, guitar, knife, lamp, laptop, motor, mug, pistol, rocket, skate and table. Due to space limitations, it is impossible to show all the examples; thus, we randomly selected a model from each category for visual comparison. For each group of objects, the leftmost one is the ground truth, the middle one was predicted by PointNet, and the right one was predicted by PointwiseNet.
+
+<img src="https://github.com/djzgroup/PointwiseNet/blob/master/img/part_seg.jpg" width="600">
+
+**Semantic segmentation in scenes**\
+Qualitative results for semantic segmentation. From left to right: original input scenes; ground truth point cloud segmentation; PointNet segmentation results and PointwiseNet segmentation results. Best viewed in color. We selected 5 room scenes (from top to bottom are conference room #1, office #1, office #3, lounge #1, and lobby #1) from the evaluation dataset for display. The first column is the input point cloud, with the walls and ceiling hidden for clarity.  The second, third, and last columns are the ground truth segmentation, the prediction from PointNet, and the prediction from PointwiseNet, respectively, where the points belonging to different semantic regions are coloured differently (chairs in red, tables in purple, bookcase in green, floors in blue, clutters in black, beam in yellow, board in grey, and doors in khaki).
+
+<img src="https://github.com/djzgroup/PointwiseNet/blob/master/img/sem_seg.jpg" width="600">
+
+**Commercial 3D CAD model retrieval**\
+The retrieval results. Left column: queries. Right five columns: retrieved models from the 3D CAD model database.
+
+<img src="https://github.com/djzgroup/PointwiseNet/blob/master/img/retrival.jpg" width="450">
+
 
 ## Acknowledgment
 This work was supported in part by the National Natural Science Foundation of China under Grant 61702350 and Grant 61472289 and in part by the Open Project Program of the State Key Laboratory of Digital Manufacturing Equipment and Technology, HUST, under Grant DMETKF2017016.
