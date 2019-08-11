@@ -22,7 +22,7 @@ For the 3D semantic segmentation, the complete segmentation network consists of 
 The feature learning takes a single object for part region segmentation as input, while the segmentation component concatenates the three output vectors (low-level geometry vector, high-level semantic vector, and global feature vector) into a 1536-dimensional feature vector and then inputs it into four fully connected layers to obtain the final classification result, which is N*M scores for each of the N points and each of the M semantic subcategories.
 
 ## HOW DOES OUR VLAD MODULE WORKS
-
+[xxxxxxxxx](https://github.com/djzgroup/PointwiseNet/blob/master/HowDoesOurVladModuleWorks.pdf)
 
 ## Results
 **3D object part segmentation**
