@@ -21,23 +21,21 @@ The feature learning takes N points as input, applies input and feature transfor
 For the 3D semantic segmentation, the complete segmentation network consists of pointwise feature learning and segmentation. 
 The feature learning takes a single object for part region segmentation as input, while the segmentation component concatenates the three output vectors (low-level geometry vector, high-level semantic vector, and global feature vector) into a 1536-dimensional feature vector and then inputs it into four fully connected layers to obtain the final classification result, which is N*M scores for each of the N points and each of the M semantic subcategories.
 
-## HOW DOES OUR VLAD MODULE WORKS
+## How does our VLAD module works?
 We show how to leverage the VLAD mechanism to extract the high-level semantic features from the 3D point set. VLAD is a popular descriptor pooling method for both instance-level retrieval and image classification. Arandjelovic et al. proposed an end-to-end deep network named NetVLAD that stores the sum of residuals for each visual word (cluster centre) of a 2D image and performs image-based retrieval for place recognition. PointNetVLAD leverages on the success of PointNet and NetVLAD to perform 3D point-cloud based retrieval for large-scale place recognition.\ 
 The pointwise high-level semantic feature (e.g., skeleton or part of the 3D model) is an implicit expression that is difficult to describe directly. Inspired by PointNetVLAD and NetVLAD, we can indirectly describe the high-level semantic feature by the relationship between each point’s low-level geometric descriptor and a few visual words.\
 [Click on the hyperlink for details.](https://github.com/djzgroup/PointwiseNet/blob/master/HowDoesOurVladModuleWorks.pdf)
 
-## CODE
-${ROOT}
-|── data/
-├───├── mpii/
-|   └───├── annot/
-|       └── images/
-|       
-└───├── h36m/
-    └───├── annot/
-        └── images/
-            ├── S1/
-            └── S5/
+## Overview code directory
+${ROOT}/\
+   ├── image/\
+   ├── models/ :contains data preparation, model definition.\
+   ├── part_seg/ :includes training scripts for 3D object part segmentation.\
+   ├── sem_seg/ :includes training scripts for Semantic segmentation in scenes.\
+   ├── utils/ :contains some utility functions.\
+   ├── train.py/ : training scripts for 3D object classification.\
+   ├── evaluate.py\
+   ├── README.md
 
 ## Results
 **3D object part segmentation**
@@ -53,9 +51,20 @@ The retrieval results. Left column: queries. Right five columns: retrieved model
 
 <img src="https://github.com/djzgroup/PointwiseNet/blob/master/img/retrival.jpg" width="450">
 
-## HYPOTHESIS TESTING
+## Hypothesis testing
 Taking the 3D object classification experiment as an example, we prove that the proposed method is significantly different from other methods through the hypothesis testing.\
 [Click on the hyperlink for details.](https://github.com/djzgroup/PointwiseNet/blob/master/HypothesisTesting.pdf)
+
+## Best model
+You can download the best trained model to verify our results.\
+3D object classification(modelnet10)\
+[1024,94.5]{https://git}  [2048,95.0]{https://git}  [5000,95.1]{https://git}\
+3D object classification(modelnet40)\
+[1024,91.3]{https://git}  [2048,91.6]{https://git}  [5000,92.7]{https://git}\
+3D object part segmentation(ShapeNet)\
+[85.1]{https://git}\
+Semantic segmentation in scenes(S3DIS)\
+[5000,92.7]{https://git}
 
 ## Acknowledgment
 This work was supported in part by the National Natural Science Foundation of China under Grant 61702350 and Grant 61472289 and in part by the Open Project Program of the State Key Laboratory of Digital Manufacturing Equipment and Technology, HUST, under Grant DMETKF2017016.
