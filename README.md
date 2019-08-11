@@ -27,11 +27,11 @@ The feature learning takes a single object for part region segmentation as input
 ## Results
 **3D object part segmentation**
 Results of part segmentation on the validation data of the ShapeNet part dataset. Best viewed in color. Examples are plane, bag, cap, car, chair, earphone, guitar, knife, lamp, laptop, motor, mug, pistol, rocket, skate and table. Due to space limitations, it is impossible to show all the examples; thus, we randomly selected a model from each category for visual comparison. For each group of objects, the leftmost one is the ground truth, the middle one was predicted by PointNet, and the right one was predicted by PointwiseNet.
-<img src="https://github.com/djzgroup/PointwiseNet/blob/master/img/part_seg.jpg" width="450">
+<img src="https://github.com/djzgroup/PointwiseNet/blob/master/img/part_seg.jpg" width="600">
 
 **Semantic segmentation in scenes**
 Qualitative results for semantic segmentation. From left to right: original input scenes; ground truth point cloud segmentation; PointNet segmentation results and PointwiseNet segmentation results. Best viewed in color. We selected 5 room scenes (from top to bottom are conference room #1, office #1, office #3, lounge #1, and lobby #1) from the evaluation dataset for display. The first column is the input point cloud, with the walls and ceiling hidden for clarity.  The second, third, and last columns are the ground truth segmentation, the prediction from PointNet, and the prediction from PointwiseNet, respectively, where the points belonging to different semantic regions are coloured differently (chairs in red, tables in purple, bookcase in green, floors in blue, clutters in black, beam in yellow, board in grey, and doors in khaki).
-<img src="https://github.com/djzgroup/PointwiseNet/blob/master/img/sem_seg.jpg" width="400">
+<img src="https://github.com/djzgroup/PointwiseNet/blob/master/img/sem_seg.jpg" width="600">
 
 **Commercial 3D CAD model retrieval**
 The retrieval results. Left column: queries. Right five columns: retrieved models from the 3D CAD model database.
