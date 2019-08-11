@@ -26,6 +26,19 @@ We show how to leverage the VLAD mechanism to extract the high-level semantic fe
 The pointwise high-level semantic feature (e.g., skeleton or part of the 3D model) is an implicit expression that is difficult to describe directly. Inspired by PointNetVLAD and NetVLAD, we can indirectly describe the high-level semantic feature by the relationship between each point’s low-level geometric descriptor and a few visual words.\
 [Click on the hyperlink for details.](https://github.com/djzgroup/PointwiseNet/blob/master/HowDoesOurVladModuleWorks.pdf)
 
+## CODE
+${ROOT}
+|── data/
+├───├── mpii/
+|   └───├── annot/
+|       └── images/
+|       
+└───├── h36m/
+    └───├── annot/
+        └── images/
+            ├── S1/
+            └── S5/
+
 ## Results
 **3D object part segmentation**
 Results of part segmentation on the validation data of the ShapeNet part dataset. Best viewed in color. Examples are plane, bag, cap, car, chair, earphone, guitar, knife, lamp, laptop, motor, mug, pistol, rocket, skate and table. Due to space limitations, it is impossible to show all the examples; thus, we randomly selected a model from each category for visual comparison. For each group of objects, the leftmost one is the ground truth, the middle one was predicted by PointNet, and the right one was predicted by PointwiseNet.
@@ -40,7 +53,7 @@ The retrieval results. Left column: queries. Right five columns: retrieved model
 
 <img src="https://github.com/djzgroup/PointwiseNet/blob/master/img/retrival.jpg" width="450">
 
-## HOW DOES OUR VLAD MODULE WORKS
+## HYPOTHESIS TESTING
 Taking the 3D object classification experiment as an example, we prove that the proposed method is significantly different from other methods through the hypothesis testing.\
 [Click on the hyperlink for details.](https://github.com/djzgroup/PointwiseNet/blob/master/HypothesisTesting.pdf)
 
