@@ -40,13 +40,13 @@ ${ROOT}/\
 
 ## Best model
 **You can download the best trained model to verify our results.**
-- 3D object classification(modelnet10)\
+- 3D object classification(*modelnet10*)\
   [[1024,94.5]](https://drive.google.com/file/d/1K2RGAm5KQ4WYSRaPpfF_u12b7B4ieyAc/view?usp=sharing)  [[2048,95.0]](https://drive.google.com/file/d/1CqYDabSQ6XFx9wDyutDud10aC7g5YtCy/view?usp=sharing)   [[5000,95.1]](https://drive.google.com/file/d/1CIcz9rzkE7cLyPQ1DPpK_8nZsvrApKJX/view?usp=sharing) 
-- 3D object classification(modelnet40)\
+- 3D object classification(*modelnet40*)\
   [[1024,91.3]](https://drive.google.com/file/d/1wIZB83qaEUAA8gmXUGZXHlAIVCkiAWiw/view?usp=sharing)  [[2048,91.6]](https://drive.google.com/file/d/1wK7JorE9Q2Wh4BwfJZjbEsQLBQf3YKp_/view?usp=sharing)   [[5000,92.7]](https://drive.google.com/file/d/17-zHO7V99iFjzE_dFXsAKxPaYAJ_AIh9/view?usp=sharing) 
-- 3D object part segmentation(ShapeNet)\
+- 3D object part segmentation(*ShapeNet*)\
   [[85.1]](https://drive.google.com/file/d/1q_sBZtbJoygv6gFm35Bq2Kvetr1XXELp/view?usp=sharing) 
-- Semantic segmentation in scenes(S3DIS)\
+- Semantic segmentation in scenes(*S3DIS*)\
   [[5000,92.7]](https://drive.google.com/file/d/1q2rsqdtLi2EXxvEQvG6Uom0wESD2KB6u/view?usp=sharing) 
 
 
