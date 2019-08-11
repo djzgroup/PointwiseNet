@@ -22,7 +22,9 @@ For the 3D semantic segmentation, the complete segmentation network consists of 
 The feature learning takes a single object for part region segmentation as input, while the segmentation component concatenates the three output vectors (low-level geometry vector, high-level semantic vector, and global feature vector) into a 1536-dimensional feature vector and then inputs it into four fully connected layers to obtain the final classification result, which is N*M scores for each of the N points and each of the M semantic subcategories.
 
 ## HOW DOES OUR VLAD MODULE WORKS
-[xxxxxxxxx](https://github.com/djzgroup/PointwiseNet/blob/master/HowDoesOurVladModuleWorks.pdf)
+We show how to leverage the VLAD mechanism to extract the high-level semantic features from the 3D point set. VLAD is a popular descriptor pooling method for both instance-level retrieval and image classification. Arandjelovic et al. proposed an end-to-end deep network named NetVLAD that stores the sum of residuals for each visual word (cluster centre) of a 2D image and performs image-based retrieval for place recognition. PointNetVLAD leverages on the success of PointNet and NetVLAD to perform 3D point-cloud based retrieval for large-scale place recognition.\ 
+The pointwise high-level semantic feature (e.g., skeleton or part of the 3D model) is an implicit expression that is difficult to describe directly. Inspired by PointNetVLAD and NetVLAD, we can indirectly describe the high-level semantic feature by the relationship between each point’s low-level geometric descriptor and a few visual words.\
+[Click on the hyperlink for details.](https://github.com/djzgroup/PointwiseNet/blob/master/HowDoesOurVladModuleWorks.pdf)
 
 ## Results
 **3D object part segmentation**
@@ -39,7 +41,8 @@ The retrieval results. Left column: queries. Right five columns: retrieved model
 <img src="https://github.com/djzgroup/PointwiseNet/blob/master/img/retrival.jpg" width="450">
 
 ## HOW DOES OUR VLAD MODULE WORKS
-
+Taking the 3D object classification experiment as an example, we prove that the proposed method is significantly different from other methods through the hypothesis testing.\
+[Click on the hyperlink for details.](https://github.com/djzgroup/PointwiseNet/blob/master/HypothesisTesting.pdf)
 
 ## Acknowledgment
 This work was supported in part by the National Natural Science Foundation of China under Grant 61702350 and Grant 61472289 and in part by the Open Project Program of the State Key Laboratory of Digital Manufacturing Equipment and Technology, HUST, under Grant DMETKF2017016.
