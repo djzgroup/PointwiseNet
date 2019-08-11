@@ -2,11 +2,13 @@
 ## Pointwise Geometric and Semantic Learning Network on 3D Point Clouds
 The geometric and semantic information of 3D point clouds significantly influence the analysis of 3D point cloud structures. However, semantic learning of 3D point clouds based on deep learning is challenging due to the naturally unordered data structure. In this work, we strive to impart machines with the knowledge of 3D object shapes, thereby enabling machines to infer the high-level semantic information of the 3D model. Inspired by the vector of locally aggregated descriptors, we propose indirectly describing the high-level semantic information through the relationship of each point's low-level geometric descriptor with a few visual words. Based on this approach, an end-to-end network is designed for 3D shape analysis, which combines pointwise low-level geometric and high-level semantic information. A spatial transform and uniform operation are applied in the network to make it invariant to input rotation and translation, respectively. In addition, our network also employs pointwise feature extraction and pooling operations to solve the unordered point cloud. In a series of experiments with popular 3D shape analysis benchmarks, our network exhibits competitive performance in many important tasks, such as 3D object classification, 3D object part segmentation, semantic segmentation in scenes, and commercial 3D CAD model retrieval.
 
+
 **Our main contributions include the following:**
 - We present a novel method based on the VLAD mechanism to extract high-level semantic information of point clouds, which is indirectly described by the relationship of each point's low-level geometric descriptor with a few visual words, such that machines can infer the high-level semantic information of the 3D point cloud.
 - We propose an end-to-end network for 3D shape analysis, named PointwiseNet, which combines pointwise low-level geometric and high-level semantic features. The network has the ability to classify and segment 3D models and does not require any pretraining.
 - Four different strategies, including pointwise feature extraction, spatial transform, uniform operation, and pooling operation, enable PointwiseNet to address the rotation invariance, translation invariance, and disorder of point cloud data.		
 - The effectiveness of the presented network is validated on a number of benchmark datasets,  demonstrating encouraging improvements. Some extensive experiments are also conducted to verify our claims and justify our design choices in PointwiseNet.
+
 
 ## The network architecture
 <img src="https://github.com/djzgroup/PointwiseNet/blob/master/img/flowchart.jpg" width="600">
@@ -21,10 +23,13 @@ The feature learning takes N points as input, applies input and feature transfor
 For the 3D semantic segmentation, the complete segmentation network consists of pointwise feature learning and segmentation. 
 The feature learning takes a single object for part region segmentation as input, while the segmentation component concatenates the three output vectors (low-level geometry vector, high-level semantic vector, and global feature vector) into a 1536-dimensional feature vector and then inputs it into four fully connected layers to obtain the final classification result, which is N*M scores for each of the N points and each of the M semantic subcategories.
 
+
 ## How does our VLAD module works?
-We show how to leverage the VLAD mechanism to extract the high-level semantic features from the 3D point set. VLAD is a popular descriptor pooling method for both instance-level retrieval and image classification. Arandjelovic et al. proposed an end-to-end deep network named NetVLAD that stores the sum of residuals for each visual word (cluster centre) of a 2D image and performs image-based retrieval for place recognition. PointNetVLAD leverages on the success of PointNet and NetVLAD to perform 3D point-cloud based retrieval for large-scale place recognition.\ 
+We show how to leverage the VLAD mechanism to extract the high-level semantic features from the 3D point set. VLAD is a popular descriptor pooling method for both instance-level retrieval and image classification. Arandjelovic et al. proposed an end-to-end deep network named NetVLAD that stores the sum of residuals for each visual word (cluster centre) of a 2D image and performs image-based retrieval for place recognition. PointNetVLAD leverages on the success of PointNet and NetVLAD to perform 3D point-cloud based retrieval for large-scale place recognition.
+
 The pointwise high-level semantic feature (e.g., skeleton or part of the 3D model) is an implicit expression that is difficult to describe directly. Inspired by PointNetVLAD and NetVLAD, we can indirectly describe the high-level semantic feature by the relationship between each point’s low-level geometric descriptor and a few visual words.\
 [Click on the hyperlink for details.](https://github.com/djzgroup/PointwiseNet/blob/master/HowDoesOurVladModuleWorks.pdf)
+
 
 ## Overview code directory
 ${ROOT}/\
@@ -77,9 +82,9 @@ The following table summarizes the space (number of parameters) and the time (fl
 Method 	| #params | #FLOPs (Inference) 
 -|-|-
 PointNet [1]      |3.48M	 |14.70B
-PointNet++ [2]  | 1.48M	 |26.94B
-3DmFVNet [3]      | 45.77M	 |16.89B
-PointwiseNet      | 78.00 | 1.41M	 |12.92B
+PointNet++ [2]    |1.48M	 |26.94B
+3DmFVNet [3]      |45.77M	 |16.89B
+PointwiseNet      |1.41M	 |12.92B
 
 
 ## References
