@@ -60,7 +60,7 @@ Taking the 3D object classification experiment as an example, we prove that the 
 ## Best model
 **You can download the best trained model to verify our results.**
 - 3D object classification(modelnet10)\
-  [[1024,94.5]](https://github.com/djzgroup/PointwiseNet)  [[2048,95.0]](https://github.com/djzgroup/PointwiseNet)   [[5000,95.1]](https://github.com/djzgroup/PointwiseNet) 
+  [[1024,94.5]](https://drive.google.com/open?id=1K2RGAm5KQ4WYSRaPpfF_u12b7B4ieyAc)  [[2048,95.0]](https://github.com/djzgroup/PointwiseNet)   [[5000,95.1]](https://github.com/djzgroup/PointwiseNet) 
 - 3D object classification(modelnet40)\
   [[1024,91.3]](https://github.com/djzgroup/PointwiseNet)  [[2048,91.6]](https://github.com/djzgroup/PointwiseNet)   [[5000,92.7]](https://github.com/djzgroup/PointwiseNet) 
 - 3D object part segmentation(ShapeNet)\
