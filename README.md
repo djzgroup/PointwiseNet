@@ -71,5 +71,16 @@ The retrieval results. Left column: queries. Right five columns: retrieved model
 <img src="https://github.com/djzgroup/PointwiseNet/blob/master/img/retrival.jpg" width="450">
 
 
+## Bilingual Lexicon Induction
+for the model complexity problem, in order to compare with other methods, the following table summarizes the space (number of parameters) and the time (floating point operations) complexity of PointwiseNet in 3D object classification task with 1024 points as the input. Compared with PointNet++ [40], PointwiseNet reduces the parameters by 4.7% and the FLOPs by 52.0%, which shows its great potential for real-time applications, e.g., scene parsing in autonomous driving.
+
+Method 	| #params | #FLOPs (Inference) 
+-|-|-
+PointNet      |3.48M	 |14.70B
+FaPointNet++ | 1.48M	 |26.94B
+3DmFVNet | 45.77M	 |16.89B
+Our | 78.00 | 1.41M	 |12.92B
+
+
 ## Acknowledgment
 This work was supported in part by the National Natural Science Foundation of China under Grant 61702350 and Grant 61472289 and in part by the Open Project Program of the State Key Laboratory of Digital Manufacturing Equipment and Technology, HUST, under Grant DMETKF2017016.
