@@ -52,7 +52,7 @@ ${ROOT}/\
 - 3D object part segmentation(*ShapeNet*)\
   [[85.1]](https://drive.google.com/file/d/1q_sBZtbJoygv6gFm35Bq2Kvetr1XXELp/view?usp=sharing) 
 - Semantic segmentation in scenes(*S3DIS*)\
-  [[5000,92.7]](https://drive.google.com/file/d/1q2rsqdtLi2EXxvEQvG6Uom0wESD2KB6u/view?usp=sharing) 
+  [[4096,83.36]](https://drive.google.com/file/d/1q2rsqdtLi2EXxvEQvG6Uom0wESD2KB6u/view?usp=sharing) 
 
 
 ## Results
